@@ -1,5 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+    <ItemGroup>
+        <ProjectReference Include="..\Mercadinho.Prateleira.Domain\Mercadinho.Prateleira.Domain.csproj" />
+        <ProjectReference Include="..\Mercadinho.Prateleira.Infrastructure.Data\Mercadinho.Prateleira.Infrastructure.Data.csproj" />
+<!--        <ProjectReference Include="..\Mercadinho.Prateleira.Services\Mercadinho.Prateleira.Services.csproj" />-->
+    </ItemGroup>
+
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
         <Nullable>enable</Nullable>
