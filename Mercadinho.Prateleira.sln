@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercadinho.Prateleira.API", "src\Mercadinho.Prateleira.API\Mercadinho.Prateleira.API.csproj", "{BA6B652F-3C3A-46B5-8596-3F5EC0396006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercadinho.Prateleira.Domain", "src\Mercadinho.Prateleira.Domain\Mercadinho.Prateleira.Domain.csproj", "{45E47E86-A5F4-4872-A72B-57CA038A693E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mercadinho.Prateleira.Infrastructure.Data", "src\Mercadinho.Prateleira.Infrastructure.Data\Mercadinho.Prateleira.Infrastructure.Data.csproj", "{82F9D83C-47DA-466F-9E61-07DE946D55ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA6B652F-3C3A-46B5-8596-3F5EC0396006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA6B652F-3C3A-46B5-8596-3F5EC0396006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA6B652F-3C3A-46B5-8596-3F5EC0396006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA6B652F-3C3A-46B5-8596-3F5EC0396006}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E47E86-A5F4-4872-A72B-57CA038A693E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E47E86-A5F4-4872-A72B-57CA038A693E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E47E86-A5F4-4872-A72B-57CA038A693E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E47E86-A5F4-4872-A72B-57CA038A693E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F9D83C-47DA-466F-9E61-07DE946D55ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F9D83C-47DA-466F-9E61-07DE946D55ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F9D83C-47DA-466F-9E61-07DE946D55ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F9D83C-47DA-466F-9E61-07DE946D55ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
