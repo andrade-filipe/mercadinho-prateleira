@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Mercadinho.Prateleira.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(PrateleiraDbContext))]
-    [Migration("20240824050330_Initial")]
+    [Migration("20240824145435_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
