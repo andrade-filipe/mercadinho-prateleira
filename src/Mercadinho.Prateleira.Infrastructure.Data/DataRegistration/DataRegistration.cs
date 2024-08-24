@@ -12,7 +12,7 @@ namespace Mercadinho.Prateleira.Infrastructure.Data.DataRegistration
         {
             services.AddDbContextPool<DbContext, PrateleiraDbContext>(options =>
             {
-                options.UseNpgsql(configuration.GetConnectionString("sql_connection"));
+                options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
             return services;
