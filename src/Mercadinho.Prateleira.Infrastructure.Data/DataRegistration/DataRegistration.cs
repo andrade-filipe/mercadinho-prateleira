@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Mercadinho.Prateleira.Infrastructure.Data.DataRegistration
 {
-    public static class DataRegsitration
+    public static class DataRegistration
     {
         public static IServiceCollection AddDataRegistration(
             this IServiceCollection services, IConfiguration configuration)
