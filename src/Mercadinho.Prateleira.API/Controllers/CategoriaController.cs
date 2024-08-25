@@ -27,5 +27,13 @@ namespace Mercadinho.Prateleira.API.Controllers
             return categories.Any() ? Ok(categories) : NoContent();
         }
 
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Create()
+        {
+
+        }
+
     }
 }
