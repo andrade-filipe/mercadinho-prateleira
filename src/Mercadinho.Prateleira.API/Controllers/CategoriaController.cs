@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Mercadinho.Prateleira.API.Application.Categoria.Command;
 using Mercadinho.Prateleira.API.Application.Categoria.Query;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,10 +31,18 @@ namespace Mercadinho.Prateleira.API.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> Create(CreateCategoryCommand command,
+            CancellationToken cancellationToken)
         {
+            if (!command.Validation.IsValid)
+            {
+                return BadRequest(command.Validation.Errors);
+            }
 
+            var sucesso = await _mediator.Send(command, cancellationToken)
+                .ConfigureAwait(false);
+
+            return Ok(sucesso);
         }
-
     }
 }
