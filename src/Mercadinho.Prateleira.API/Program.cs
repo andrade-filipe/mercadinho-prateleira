@@ -1,5 +1,3 @@
-using MediatR;
-using Mercadinho.Prateleira.API.Application.Categoria.Command;
 using Mercadinho.Prateleira.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -15,7 +13,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(opt =>
     opt.SerializerSettings.ReferenceLoopHandling =
         Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
-builder.Services.AddMediatR(config => config.RegisterServicesFromAssemblies(typeof(CreateCategoryCommand).Assembly));
+//builder.Services.AddMediatR(Assembly.GetExecutingAssembly());
 
 builder.Services.AddSwaggerGen(c =>
 {

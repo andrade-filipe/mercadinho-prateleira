@@ -44,5 +44,29 @@ namespace Mercadinho.Prateleira.API.Controllers
 
             return Ok(sucesso);
         }
+
+        [HttpPut]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Update(UpdateCategoryCommand command,
+            CancellationToken cancellationToken)
+        {
+            var sucesso = await _mediator.Send(command, cancellationToken)
+                .ConfigureAwait(false);
+
+            return Ok(sucesso);
+        }
+
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Delete(DeleteCategoryCommand command, CancellationToken cancellationToken)
+        {
+            var sucesso = await _mediator.Send(command, cancellationToken)
+                .ConfigureAwait(false);
+
+            return Ok(sucesso);
+        }
+
     }
 }
